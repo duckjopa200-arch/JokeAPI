@@ -9,7 +9,7 @@ async function getData() {
   const data = await response.json();
   console.log(data)
 
-  jokeText.textContent = data.setup + " — " + data.punchline;
+  jokeText.textContent = `${data.setup} — ${data.punchline}`;
 }
 
 
