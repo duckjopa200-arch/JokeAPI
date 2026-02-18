@@ -1,12 +1,17 @@
 
-
 body{
-	background: linear-gradient(90deg,rgba(255, 234, 0, 1) 0%, rgba(255, 191, 0, 1) 50%, rgba(255, 234, 0, 1) 100%);
+	background: radial-gradient(circle,rgba(251, 235, 63, 1) 0%, rgba(255, 247, 0, 1) 50%, rgba(251, 188, 63, 1) 100%);
 }
 
+h1{
+	background-color: #00BFFF;
+	color: #FF1493;
+}
 
-div{
+.getJoke{
 	display: flex;
 	align-items: center;
 	justify-content:space-between;
+	background-color: #00BFFF;
+	color: #FF1493;
 }
