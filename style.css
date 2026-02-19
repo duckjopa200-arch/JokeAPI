@@ -1,17 +1,72 @@
 
-body{
-	background: linear-gradient(135deg,rgba(255, 60, 0, 1) 0%, rgba(255, 128, 0, 1) 50%, rgba(251, 179, 63, 1) 100%);
-}
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-h1{
-	background-color: #00BFFF;
-	color: #FF1493;
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	background: linear-gradient(
+		180deg,
+		rgba(187, 0, 255, 1) 0%, 
+		rgba(214, 102, 255, 1) 40%, 
+		rgba(176, 63, 251, 1) 100%);
+	
 }
 
 .getJoke{
 	display: flex;
 	align-items: center;
-	justify-content:space-between;
-	background-color: #00BFFF;
-	color: #FF1493;
+	justify-content: space-evenly;
+	flex-direction: column;
+
+	max-width: 1000px;
+	min-width: 600px;
+	height: 400px;
+
+	padding:20px;
+
+	border: black solid 2px;
+	border-radius: 80px;
+	color: rgba(190, 0, 255, 1);
+	background: rgb(220, 220, 220);
+	font-family: Comic Neue, cursive;
+	font-weight: bold;
+}
+
+p{
+	font-size: 20px;
+
+}
+
+#getJoke{
+	height: 50px;
+	width: 100px;
+
+
+	color: rgba(190, 0, 255, 1);
+	background: none;
+	border: rgba(190, 0, 255, 1) solid 2px;
+	border-radius: 25px; 
+
+	font-family: Comic Neue, cursive;
+	font-weight: bold;
+	font-size: 20px;
+
+	transition: transform 0.15s ease;
+	cursor: pointer;
+}
+
+#getJoke:hover {
+	color: rgb(220, 220, 220);
+	background: linear-gradient(180deg,rgba(187, 0, 255, 1) 0%, rgba(214, 102, 255, 1) 40%, rgba(176, 63, 251, 1) 100%);
+    border: rgba(190, 0, 255, 1) solid 2px;
+
+	transform: scale(1.2);
+}
+
+#getJoke:active{
+	transform: scale(0.95);
 }
